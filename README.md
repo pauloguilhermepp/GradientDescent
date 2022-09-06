@@ -5,7 +5,7 @@ This repository contains an implementation of the Gradient Descent algorithm usi
 * **NumVar**: Number of variables.
 * **NumIt**: Number of iterations.
 * **Alpha**: Learning rate.
-* ***Dx**: Differential value used to calculate the derivative of the *EvaluationFunc*.
+* **Dx**: Differential value used to calculate the derivative of the *EvaluationFunc*.
 * **MinValue**: Minimum value of a variable in the solution.
 * **MaxValue**: Maximum value of a variable in the solution.
 * **EvaluationFunc**: Function used to evaluate solutions.

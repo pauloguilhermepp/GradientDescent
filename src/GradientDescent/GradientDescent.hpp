@@ -1,7 +1,6 @@
 #include <vector>
 #include <iostream>
-#include <functional> 
-#include<algorithm>
+#include <algorithm>
 
 #ifndef GRADIENT_DESCENT_HPP
 #define GRADIENT_DESCENT_HPP
