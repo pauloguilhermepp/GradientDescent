@@ -2,11 +2,11 @@
 #include <iostream>
 #include <algorithm>
 
-#ifndef GRADIENT_DESCENT_HPP
-#define GRADIENT_DESCENT_HPP
-class GradientDescent{
+#ifndef VANILLA_GRADIENT_DESCENT_HPP
+#define VANILLA_GRADIENT_DESCENT_HPP
+class VanillaGradientDescent{
     public:
-        GradientDescent(int numVar, int numIt, long double alpha, long double dx,
+        VanillaGradientDescent(int numVar, int numIt, long double alpha, long double dx,
                         long double minValue, long double maxValue,
                         long double (*evaluationFunc)(std::vector<long double>));
         void run();

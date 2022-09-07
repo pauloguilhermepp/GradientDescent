@@ -1,4 +1,4 @@
-#include "GradientDescent/GradientDescent.cpp"
+#include "GradientDescent/VanillaGradientDescent/VanillaGradientDescent.cpp"
 
 long double evaluationFunction(std::vector<long double> vector){
     long double sum = 0;
@@ -11,7 +11,7 @@ long double evaluationFunction(std::vector<long double> vector){
 }
 
 int main(){
-    GradientDescent gd(10, 100, 0.1, 0.1, 0,1, &evaluationFunction);
+    VanillaGradientDescent gd(10, 100, 0.1, 0.1, 0,1, &evaluationFunction);
     gd.run();
 
     return 0;
