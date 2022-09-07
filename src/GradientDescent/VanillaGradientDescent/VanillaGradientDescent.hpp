@@ -11,7 +11,7 @@ class VanillaGradientDescent{
                         long double (*evaluationFunc)(std::vector<long double>));
         void run();
 
-    private:
+    protected:
         int numVar, numIt;
         std::vector<long double> solution;
         long double alpha, dx, minValue, maxValue;

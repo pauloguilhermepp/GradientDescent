@@ -11,8 +11,8 @@ long double evaluationFunction(std::vector<long double> vector){
 }
 
 int main(){
-    VanillaGradientDescent gd(10, 100, 0.1, 0.1, 0,1, &evaluationFunction);
-    gd.run();
+    VanillaGradientDescent vgd(10, 100, 0.1, 0.1, 0,1, &evaluationFunction);
+    vgd.run();
 
     return 0;
 }
