@@ -18,6 +18,7 @@ class GradientDescent{
         long double (*evaluationFunc)(std::vector<long double>);
 
         std::vector<long double> gradient();
+        long double checkNewValue(long double newValue);
         void showSolution();
 
         long double uniformRandomNum(long double MinValue, long double MaxValue);

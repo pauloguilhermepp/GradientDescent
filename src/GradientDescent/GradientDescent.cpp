@@ -28,6 +28,16 @@ std::vector<long double> GradientDescent::gradient(){
     return gradient;
 }
 
+long double GradientDescent::checkNewValue(long double newValue){
+    if(newValue > maxValue){
+        newValue = maxValue;
+    }else if(newValue < minValue){
+        newValue = minValue;
+    }
+
+    return newValue;
+}
+
 void GradientDescent::showSolution(){
     std::cout << "Solution: ";
     for(int i = 0; i < numVar; i++){
@@ -51,11 +61,7 @@ void GradientDescent::run(){
         for(int j = 0; j < numVar; j++){
             newValue = solution[j] - alpha * dSolution[j];
 
-            if(newValue > maxValue){
-                newValue = maxValue;
-            }else if(newValue < minValue){
-                newValue = minValue;
-            }
+            newValue = checkNewValue(newValue);
 
             solution[j] = newValue;
         }
