@@ -4,6 +4,7 @@ VanillaGradientDescent::VanillaGradientDescent(int NumVar, int NumIt,
                         long double Alpha, long double Dx,
                         long double MinValue, long double MaxValue,
                         long double (*EvaluationFunc)(std::vector<long double>)){
+                            srand(time(NULL));
                             numVar = NumVar;
                             numIt = NumIt;
                             alpha = Alpha;
