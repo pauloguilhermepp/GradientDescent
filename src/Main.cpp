@@ -1,4 +1,5 @@
 #include "GradientDescent/VanillaGradientDescent/VanillaGradientDescent.cpp"
+#include "GradientDescent/MomentumGradientDescent/MomentumGradientDescent.cpp"
 
 long double evaluationFunction(std::vector<long double> vector){
     long double sum = 0;
@@ -11,8 +12,11 @@ long double evaluationFunction(std::vector<long double> vector){
 }
 
 int main(){
-    VanillaGradientDescent vgd(10, 100, 0.1, 0.1, 0,1, &evaluationFunction);
+    VanillaGradientDescent vgd(10, 7, 0.1, 0.1, 0, 1, &evaluationFunction);
     vgd.run();
+
+    MomentumGradientDescent mgd(10, 7, 0.1, 0.1, 0.1, 0, 1, &evaluationFunction);
+    mgd.run();
 
     return 0;
 }
