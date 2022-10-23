@@ -11,6 +11,16 @@ long double evaluationFunction(std::vector<long double> vector){
     return sum;
 }
 
+long double alternativeEvaluationFunction(std::vector<long double> vector){
+    long double sum = 0;
+
+    for(int i = 0; i < vector.size(); i++){
+        sum += vector[i] * vector[i];
+    }
+
+    return sum;
+}
+
 int main(){
     VanillaGradientDescent vgd(10, 7, 0.1, 0.1, 0, 1, &evaluationFunction);
     vgd.run();
